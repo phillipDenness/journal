@@ -1,12 +1,12 @@
 databaseChangeLog:
 - changeSet:
-    id: 1532092168569-1
+    id: 1532094179887-1
     author: phill (generated)
     changes:
     - createSequence:
         sequenceName: hibernate_sequence
 - changeSet:
-    id: 1532092168569-2
+    id: 1532094179887-2
     author: phill (generated)
     changes:
     - createTable:
@@ -18,6 +18,9 @@ databaseChangeLog:
               primaryKeyName: resourcePK
             name: resource_id
             type: INT
+        - column:
+            name: name
+            type: VARCHAR(255)
         - column:
             name: url
             type: VARCHAR(255)
